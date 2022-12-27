@@ -1,0 +1,45 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "prettier", "import"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "linebreak-style": 0, // Off
+    "max-len": ["error", { "code": 143 }],
+    "react/require-default-props": 0, // необязательные пропсы должны быть определены - выключил
+    //"spaced-comment": ["error", "always", { "exceptions": ["-", "*"] }]
+    "react-hooks/exhaustive-deps": 0, // Отключено добавлять все зависимости https://github.com/facebook/react/issues/14920
+    "react/jsx-props-no-spreading": [
+      "warn",
+      {
+        "explicitSpread": "enforce",
+        "html": "ignore",
+        "custom": "ignore",
+        "exceptions": ["<TextField>"]
+      }
+    ]
+  }
+}
