@@ -39,7 +39,7 @@ type CoffeCardProps = {
 };
 
 const CoffeCard = (props: CoffeCardProps) => {
-  const classes = useStyle();
+  // const classes = useStyle();
   const { avatarSrc, title, subtitle, description, imgSrc } = props;
 
   return (
