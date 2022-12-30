@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './react-mui13/App';
+import App from './App';
 import theme from './theme';
 
 ReactDOM.render(
