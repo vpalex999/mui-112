@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 const Home = () => {
   return (
     <div>
-      <Typography variant='h2'>Home</Typography>
+      <Typography>Hello</Typography>
     </div>
   );
 };

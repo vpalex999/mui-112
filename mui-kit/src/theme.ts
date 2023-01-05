@@ -34,6 +34,10 @@ declare module '@material-ui/core/styles/createTheme' {
       /** Кнопки 3 порядка и разметка страницы */
       button3: React.CSSProperties['color'];
     };
+    /** Фоновый цвет */
+    background: {
+      default: React.CSSProperties['color'];
+    };
   }
 
   interface ThemeOptions {
@@ -68,6 +72,10 @@ declare module '@material-ui/core/styles/createTheme' {
       /** Кнопки 3 порядка и разметка страницы */
       button3: React.CSSProperties['color'];
     };
+    /** Фоновый цвет */
+    background: {
+      default: React.CSSProperties['color'];
+    };
   }
 }
 
@@ -89,11 +97,24 @@ export const themeColor112 = createTheme({
     button2: '#BDC7E8',
     button3: '#C7D1F2',
   },
-  palette: {
-    background: {
-      paper: '#FBF7F7',
-      default: '#FBF7F7',
-    },
+  background: {
+    default: '#FBF7F7',
+  },
+  typography: {
+    fontFamily: 'PT Sans',
+    h1: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h2: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h3: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h4: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h5: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h6: { fontFamily: 'PT Sans', fontWeight: 700 },
+    subtitle1: { fontFamily: 'PT Sans', fontWeight: 400 },
+    subtitle2: { fontFamily: 'PT Sans', fontWeight: 400 },
+    body1: { fontFamily: 'PT Sans', fontWeight: 400 },
+    body2: { fontFamily: 'PT Sans', fontWeight: 400 },
+    button: { fontFamily: 'PT Sans', fontWeight: 400 },
+    caption: { fontFamily: 'PT Sans', fontWeight: 400 },
+    overline: { fontFamily: 'PT Sans', fontWeight: 400 },
   },
 });
 
@@ -115,10 +136,23 @@ export const themeLight112 = createTheme({
     button2: '#ADB2C3',
     button3: '#E0E5F0',
   },
-  palette: {
-    background: {
-      paper: '#F7F8FB',
-      default: '#F7F8FB',
-    },
+  background: {
+    default: '#F7F8FB',
+  },
+  typography: {
+    fontFamily: 'PT Sans',
+    h1: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h2: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h3: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h4: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h5: { fontFamily: 'PT Sans', fontWeight: 700 },
+    h6: { fontFamily: 'PT Sans', fontWeight: 700 },
+    subtitle1: { fontFamily: 'PT Sans', fontWeight: 400 },
+    subtitle2: { fontFamily: 'PT Sans', fontWeight: 400 },
+    body1: { fontFamily: 'PT Sans', fontWeight: 400 },
+    body2: { fontFamily: 'PT Sans', fontWeight: 400 },
+    button: { fontFamily: 'PT Sans', fontWeight: 400 },
+    caption: { fontFamily: 'PT Sans', fontWeight: 400 },
+    overline: { fontFamily: 'PT Sans', fontWeight: 400 },
   },
 });

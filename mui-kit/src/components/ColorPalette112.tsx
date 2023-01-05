@@ -32,7 +32,7 @@ const ColorPalette112 = () => {
   console.log(theme);
 
   return (
-    <Paper>
+    <Paper style={{ backgroundColor: theme.background.default }}>
       <Container>
         <Grid container>
           <Grid item lg={12}>
@@ -68,9 +68,9 @@ const ColorPalette112 = () => {
                 </Typography>
               </Grid>
               <Grid lg={3} item>
-                <Paper style={{ backgroundColor: theme.palette.background.paper }} className={classes.paperItem}>
+                <Paper style={{ backgroundColor: theme.background.default }} className={classes.paperItem}>
                   <Typography align='center' className={classes.typographyItem}>
-                    {`RGB ${theme.palette.background.paper}`}
+                    {`RGB ${theme.background.default}`}
                   </Typography>
                 </Paper>
                 <Typography align='center' className={classes.typographyContext}>
