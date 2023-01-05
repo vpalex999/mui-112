@@ -37,7 +37,7 @@ const ColorPalette112 = () => {
         <Grid container>
           <Grid item lg={12}>
             <Typography variant='h4' className={classes.typographyHeader}>
-              Палитра цветов интерфейса клиента 112
+              Палитра цветов интерфейса клиента 112 (Color)
             </Typography>
           </Grid>
           <Grid lg={6} item>
