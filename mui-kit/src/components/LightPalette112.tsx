@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => {
   });
 });
 
-const ColorPalette112 = () => {
+const LightPalette112 = () => {
   const classes = useStyles();
   const theme = useTheme();
   console.log(theme);
@@ -86,7 +86,7 @@ const ColorPalette112 = () => {
             <Grid item lg={12} container spacing={6}>
               <Grid item lg={3}>
                 <Paper className={classes.paperItem} style={{ backgroundColor: theme.button.button1 }}>
-                  <Typography align='center' className={classes.typographyItem}>
+                  <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
                     {`RGB ${theme.button.button1}`}
                   </Typography>
                 </Paper>
@@ -96,7 +96,7 @@ const ColorPalette112 = () => {
               </Grid>
               <Grid item lg={3}>
                 <Paper style={{ backgroundColor: theme.button.button2 }} className={classes.paperItem}>
-                  <Typography align='center' className={classes.typographyItem}>
+                  <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
                     {`RGB ${theme.button.button2}`}
                   </Typography>
                 </Paper>
@@ -135,7 +135,7 @@ const ColorPalette112 = () => {
               </Grid>
               <Grid lg={3} item>
                 <Paper style={{ backgroundColor: theme.statusDds.reaction }} className={classes.paperItem}>
-                  <Typography align='center' className={classes.typographyItem}>
+                  <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
                     {`RGB ${theme.statusDds.reaction}`}
                   </Typography>
                 </Paper>
@@ -155,7 +155,7 @@ const ColorPalette112 = () => {
               </Grid>
               <Grid lg={3} item>
                 <Paper style={{ backgroundColor: theme.statusDds.new }} className={classes.paperItem}>
-                  <Typography align='center' className={classes.typographyItem}>
+                  <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
                     {`RGB ${theme.statusDds.new}`}
                   </Typography>
                 </Paper>
@@ -165,7 +165,7 @@ const ColorPalette112 = () => {
               </Grid>
               <Grid lg={3} item>
                 <Paper style={{ backgroundColor: theme.statusDds.assigned }} className={classes.paperItem}>
-                  <Typography align='center' className={classes.typographyItem}>
+                  <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
                     {`RGB ${theme.statusDds.assigned}`}
                   </Typography>
                 </Paper>
@@ -187,8 +187,8 @@ const ColorPalette112 = () => {
           </Grid>
         </Grid>
       </Container>
-    </Paper>
+    </Paper >
   );
 };
 
-export default ColorPalette112;
+export default LightPalette112;

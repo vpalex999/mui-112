@@ -71,7 +71,7 @@ declare module '@material-ui/core/styles/createTheme' {
   }
 }
 
-const themeColor112 = createTheme({
+export const themeColor112 = createTheme({
   statusDds: {
     finished: '#CFEFE3',
     reaction: '#A5D3BD',
@@ -97,4 +97,28 @@ const themeColor112 = createTheme({
   },
 });
 
-export default themeColor112;
+export const themeLight112 = createTheme({
+  statusDds: {
+    finished: '#CFEFE3',
+    reaction: '#A5D3BD',
+    processed: '#F8E08E',
+    new: '#F48D94',
+    assigned: '#F2BA85',
+    canceled: '#DCE0E4',
+  },
+  text: {
+    text1: '#4C4D51',
+    text2: '#D5D7E4',
+  },
+  button: {
+    button1: '#6D6F76',
+    button2: '#ADB2C3',
+    button3: '#E0E5F0',
+  },
+  palette: {
+    background: {
+      paper: '#F7F8FB',
+      default: '#F7F8FB',
+    },
+  },
+});
