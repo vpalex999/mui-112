@@ -1,31 +1,20 @@
 import React from 'react';
-import { Button, Typography, makeStyles } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  helloThereStyle: {
-    fontStyle: 'oblique',
-    color: 'red',
-    fontSize: '30px',
-  },
-  buttonStyles: {
-    color: 'green',
-    border: 0,
-  },
-});
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import NoMatch from './pages/NoMatch';
+import ThemeColor112 from './pages/ThemeColor112';
+import ThemeLight112 from './pages/ThemeLight112';
 
 const App = () => {
-  const classes = useStyles();
-
   return (
-    <>
-      <Typography className={classes.helloThereStyle} color='primary' variant='h2'>
-        Hello there
-      </Typography>
-      <Button className={classes.buttonStyles} color='primary' variant='outlined'>
-        Hello World
-      </Button>
-    </>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route path='theme-color-112' element={<ThemeColor112 />} />
+        <Route path='theme-light-112' element={<ThemeLight112 />} />
+      </Route>
+      <Route path='*' element={<NoMatch />} />
+    </Routes>
   );
-};
+}
 
 export default App;
