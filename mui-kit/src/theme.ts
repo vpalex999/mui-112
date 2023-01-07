@@ -100,6 +100,8 @@ export const themeColor112 = createTheme({
   background: {
     default: '#FBF7F7',
   },
+  /** Отступы между элементами (px) */
+  spacing: [8, 10, 18, 24, 50],
   typography: {
     fontFamily: 'PT Sans',
     h1: { fontFamily: 'PT Sans', fontWeight: 700 },
@@ -139,6 +141,8 @@ export const themeLight112 = createTheme({
   background: {
     default: '#F7F8FB',
   },
+  /** Отступы между элементами (px) */
+  spacing: [8, 10, 18, 24, 50],
   typography: {
     fontFamily: 'PT Sans',
     h1: { fontFamily: 'PT Sans', fontWeight: 700 },
@@ -156,3 +160,5 @@ export const themeLight112 = createTheme({
     overline: { fontFamily: 'PT Sans', fontWeight: 400 },
   },
 });
+
+console.log(themeColor112);

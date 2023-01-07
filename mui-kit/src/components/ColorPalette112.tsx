@@ -46,7 +46,7 @@ const ColorPalette112 = () => {
                 Интерфейс - основная разбивка
               </Typography>
             </Grid>
-            <Grid item lg={12} container spacing={6}>
+            <Grid item lg={12} container spacing={4}>
               <Grid lg={3} item>
                 <Paper style={{ backgroundColor: theme.text.text1 }} className={classes.paperItem}>
                   <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
@@ -83,7 +83,7 @@ const ColorPalette112 = () => {
                 Интерфейс - акцентные кнопки
               </Typography>
             </Grid>
-            <Grid item lg={12} container spacing={6}>
+            <Grid item lg={12} container spacing={4}>
               <Grid item lg={3}>
                 <Paper className={classes.paperItem} style={{ backgroundColor: theme.button.button1 }}>
                   <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
@@ -122,7 +122,7 @@ const ColorPalette112 = () => {
                 Индикаторы служб
               </Typography>
             </Grid>
-            <Grid item lg={12} container spacing={6}>
+            <Grid item lg={12} container spacing={4}>
               <Grid lg={3} item>
                 <Paper style={{ backgroundColor: theme.statusDds.finished }} className={classes.paperItem}>
                   <Typography align='center' className={classes.typographyItem}>
