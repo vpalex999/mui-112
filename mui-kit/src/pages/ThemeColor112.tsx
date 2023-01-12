@@ -1,11 +1,11 @@
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import ColorPalette112 from '../components/ColorPalette112';
-import { themeColor112 } from '../theme';
+import { getThemeColor } from '../theme';
 
 const ThemeColor112 = () => {
   return (
-    <ThemeProvider theme={themeColor112}>
+    <ThemeProvider theme={getThemeColor()}>
       <ColorPalette112 />
     </ThemeProvider>
   );

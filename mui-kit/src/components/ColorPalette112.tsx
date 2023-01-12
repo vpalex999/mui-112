@@ -85,9 +85,9 @@ const ColorPalette112 = () => {
             </Grid>
             <Grid item lg={12} container spacing={4}>
               <Grid item lg={3}>
-                <Paper className={classes.paperItem} style={{ backgroundColor: theme.button.button1 }}>
+                <Paper className={classes.paperItem} style={{ backgroundColor: theme.button.primary }}>
                   <Typography align='center' className={classes.typographyItem} style={{ color: theme.text.text2 }}>
-                    {`RGB ${theme.button.button1}`}
+                    {`RGB ${theme.button.primary}`}
                   </Typography>
                 </Paper>
                 <Typography align='center' className={classes.typographyContext}>
@@ -95,9 +95,9 @@ const ColorPalette112 = () => {
                 </Typography>
               </Grid>
               <Grid item lg={3}>
-                <Paper style={{ backgroundColor: theme.button.button2 }} className={classes.paperItem}>
+                <Paper style={{ backgroundColor: theme.button.secondary }} className={classes.paperItem}>
                   <Typography align='center' className={classes.typographyItem}>
-                    {`RGB ${theme.button.button2}`}
+                    {`RGB ${theme.button.secondary}`}
                   </Typography>
                 </Paper>
                 <Typography align='center' className={classes.typographyContext}>
