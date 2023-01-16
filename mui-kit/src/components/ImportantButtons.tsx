@@ -31,8 +31,7 @@ const useImportantMainButtonStyles = makeStyles((theme) =>
  * - Кнопка. Много внимания. */
 export const ImportantButton = (props: ButtonProps) => {
   const { children } = props;
-  const theme = useTheme();
-  const classes = useImportantMainButtonStyles(theme);
+  const classes = useImportantMainButtonStyles();
 
   return (
     <Button variant='contained' className={classes.root} {...props}>
