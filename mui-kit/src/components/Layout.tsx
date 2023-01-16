@@ -18,6 +18,9 @@ const Layout = () => {
       <Button color='primary' variant='contained' component={RouterLink} to='/theme-color-112' className={classes.buttonStyle}>
         Theme Color 112
       </Button>
+      <Button color='primary' variant='contained' component={RouterLink} to='/kit-buttons' className={classes.buttonStyle}>
+        Кнопки
+      </Button>
       <Divider />
       <Outlet />
     </div>
