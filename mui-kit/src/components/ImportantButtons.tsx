@@ -24,6 +24,11 @@ const useImportantMainButtonStyles = makeStyles((theme) =>
         boxShadow: 'none',
       },
     },
+    /** Главные кнопки формы. */
+    mainButton: {
+      height: '31px',
+      marginBottom: '5px',
+    },
   }),
 );
 
@@ -42,7 +47,15 @@ export const ImportantButton = (props: ButtonProps) => {
 
 /**  Кнопки. Важные безвозвратные действия.
  * - Кнопка. Главные кнопки формы. */
-export const ImportantMainButton = (props: ButtonProps) => <ImportantButton {...props} style={{ height: '31px', marginBottom: '5px' }} />;
+export const ImportantMainButton = (props: ButtonProps) => {
+  const { children } = props;
+  const classes = useImportantMainButtonStyles();
+  return (
+    <Button className={`${classes.root} ${classes.mainButton}`} {...props}>
+      {children}
+    </Button>
+  );
+};
 
 /**  Кнопки. Важные безвозвратные действия.
  * - Кнопка. Опасные кнопки. */
